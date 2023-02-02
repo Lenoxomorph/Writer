@@ -19,7 +19,7 @@ C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\
 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Print.o)
                               C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\Startup.o (PrintToScreen(char const*, ...))
 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
-                              C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o (StartQuadEncoder(unsigned char, unsigned char, unsigned char))
+                              C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o (StartQuadEncoder(unsigned char, unsigned char, unsigned char))
 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
                               C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\Startup.o (NMIException())
 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
@@ -227,18 +227,21 @@ Discarded input sections
  .text          0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Globals.o
  .data          0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Globals.o
  .bss           0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Globals.o
- .group         0x00000000        0x8 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
- .group         0x00000000        0x8 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
  .text          0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
  .data          0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
- .bss           0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
- .text._ZN7EncoderC2Eii
+ .bss           0x00000000        0x4 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+ .text._ZL20__gthread_key_deletei
+                0x00000000       0x18 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+ .text._Z8Deadbandv
+                0x00000000       0x5c C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+ .text._Z41__static_initialization_and_destruction_0ii
                 0x00000000       0x4c C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
- .text._ZN7Encoder5valueEv
-                0x00000000       0x28 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
- .rodata        0x00000000        0xc C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
- .text._Z4Mainv
-                0x00000000       0x3c C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+ .text._GLOBAL__I__Z4Mainv
+                0x00000000       0x14 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+ .init_array    0x00000000        0x4 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+ .text          0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o
+ .data          0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o
+ .bss           0x00000000        0x0 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o
  .text          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
  .data          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
  .bss           0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
@@ -308,8 +311,6 @@ Discarded input sections
  .text._Z16GetAnalogInputHRh
                 0x00000000       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
  .text          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
- .text._Z24RegisterInterruptHandlerhhPFvhhE
-                0x00000000      0x23c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
  .text._Z16SetInterruptEdgehh
                 0x00000000       0xec C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
  .text          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
@@ -384,22 +385,8 @@ Discarded input sections
                 0x00000000       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Print.o)
  .text          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
  .data          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
- .bss           0x00000000       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
- .rodata        0x00000000       0xe0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
- .text._ZL13CheckChannelshh
-                0x00000000       0xc0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
- .text._ZL11encoderISR1hh
-                0x00000000       0xf4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
- .text._ZL11encoderISR2hh
-                0x00000000      0x130 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
- .text._Z16StartQuadEncoderhhh
-                0x00000000       0xc4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
  .text._Z15StopQuadEncoderhh
                 0x00000000       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
- .text._Z14GetQuadEncoderhh
-                0x00000000       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
- .text._Z17PresetQuadEncoderhhl
-                0x00000000       0x74 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
  .text          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
  .data          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
  .text          0x00000000        0x0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
@@ -1469,6 +1456,7 @@ LOAD C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Main.o
 LOAD C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainIO.o
 LOAD C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Globals.o
 LOAD C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+LOAD C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o
 LOAD C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
 LOAD C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib
 START GROUP
@@ -1640,7 +1628,7 @@ END GROUP
  *(.flashtext)
                 0x08000130                . = ALIGN (0x4)
 
-.text           0x08000130     0xf7fc
+.text           0x08000130    0x100a4
                 0x08000130                . = ALIGN (0x4)
  *(.text)
  .text          0x08000130       0x20 c:/program files (x86)/intelitek/easyc v6/cortex/tools/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
@@ -1765,879 +1753,908 @@ END GROUP
  .text._Z17IO_Initializationv
                 0x080034c4       0xec C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainIO.o
                 0x080034c4                IO_Initialization()
+ .text._Z4Mainv
+                0x080035b0       0x6c C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+                0x080035b0                Main()
  .text._Z7MainCppv
-                0x080035b0       0x1c C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
-                0x080035b0                MainCpp()
+                0x0800361c       0x18 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+                0x0800361c                MainCpp()
+ .text._ZN7EncoderC2Eii
+                0x08003634       0x4c C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o
+                0x08003634                Encoder::Encoder(int, int)
+                0x08003634                Encoder::Encoder(int, int)
+ .text._ZN7Encoder5valueEv
+                0x08003680       0x28 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o
+                0x08003680                Encoder::value()
  .text._Z10Initializev
-                0x080035cc        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
-                0x080035cc                Initialize()
+                0x080036a8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
+                0x080036a8                Initialize()
  .text._Z10Autonomousm
-                0x080035d8       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
-                0x080035d8                Autonomous(unsigned long)
+                0x080036b4       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
+                0x080036b4                Autonomous(unsigned long)
  .text._Z15OperatorControlm
-                0x080035ec       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
-                0x080035ec                OperatorControl(unsigned long)
+                0x080036c8       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
+                0x080036c8                OperatorControl(unsigned long)
  .text._Z12WriteUserBitth
-                0x08003600       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x08003600                WriteUserBit(unsigned short, unsigned char)
+                0x080036dc       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x080036dc                WriteUserBit(unsigned short, unsigned char)
  .text._Z11ReadUserBitt
-                0x08003638       0x28 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x08003638                ReadUserBit(unsigned short)
+                0x08003714       0x28 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x08003714                ReadUserBit(unsigned short)
  .text._Z9ResetCoreh
-                0x08003660       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x08003660                ResetCore(unsigned char)
+                0x0800373c       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x0800373c                ResetCore(unsigned char)
  .text._Z12IsAutonomousv
-                0x08003698       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x08003698                IsAutonomous()
+                0x08003774       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x08003774                IsAutonomous()
  .text._Z9IsEnabledv
-                0x080036dc       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x080036dc                IsEnabled()
+                0x080037b8       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x080037b8                IsEnabled()
  .text._Z14IsCompTemplatev
-                0x080036fc       0x50 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x080036fc                IsCompTemplate()
+                0x080037d8       0x50 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x080037d8                IsCompTemplate()
  .text._Z11SetTeamInfoPKc
-                0x0800374c       0x8c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x0800374c                SetTeamInfo(char const*)
+                0x08003828       0x8c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x08003828                SetTeamInfo(char const*)
  .text._Z18SetCompetitionModeii
-                0x080037d8       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x080037d8                SetCompetitionMode(int, int)
+                0x080038b4       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x080038b4                SetCompetitionMode(int, int)
  .text._Z17SetAutonomousModeh
-                0x08003820       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x08003820                SetAutonomousMode(unsigned char)
+                0x080038fc       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x080038fc                SetAutonomousMode(unsigned char)
  .text._Z14UpdateCompTimev
-                0x08003840       0x74 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x08003840                UpdateCompTime()
+                0x0800391c       0x74 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x0800391c                UpdateCompTime()
  .text._Z8IsOnLinev
-                0x080038b4       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x080038b4                IsOnLine()
+                0x08003990       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x08003990                IsOnLine()
  .text._Z9SetOnLinehh
-                0x080038d0       0x58 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x080038d0                SetOnLine(unsigned char, unsigned char)
+                0x080039ac       0x58 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x080039ac                SetOnLine(unsigned char, unsigned char)
  .text._Z14ReadGlobalDatav
-                0x08003928       0xb0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x08003928                ReadGlobalData()
+                0x08003a04       0xb0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x08003a04                ReadGlobalData()
  .text._Z15GetI2cMotorTypeh
-                0x080039d8       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x080039d8                GetI2cMotorType(unsigned char)
+                0x08003ab4       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x08003ab4                GetI2cMotorType(unsigned char)
  .text._Z15WriteGlobalDatav
-                0x08003a40      0x214 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
-                0x08003a40                WriteGlobalData()
+                0x08003b1c      0x214 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x08003b1c                WriteGlobalData()
  .text._Z10GetMsClockv
-                0x08003c54       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
-                0x08003c54                GetMsClock()
+                0x08003d30       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
+                0x08003d30                GetMsClock()
  .text._Z11GetGameTimev
-                0x08003c74       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
-                0x08003c74                GetGameTime()
+                0x08003d50       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
+                0x08003d50                GetGameTime()
  .text._Z4Waitl
-                0x08003cb0       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
-                0x08003cb0                Wait(long)
+                0x08003d8c       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
+                0x08003d8c                Wait(long)
  .text._Z14SysTickHandlerv
-                0x08003d14      0x738 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
-                0x08003d14                SysTickHandler()
+                0x08003df0      0x738 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
+                0x08003df0                SysTickHandler()
  .text._Z15TIM2_IRQHandlerv
-                0x0800444c      0x198 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
-                0x0800444c                TIM2_IRQHandler()
+                0x08004528      0x198 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
+                0x08004528                TIM2_IRQHandler()
  .text._Z15TIM3_IRQHandlerv
-                0x080045e4      0x1a8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
-                0x080045e4                TIM3_IRQHandler()
+                0x080046c0      0x1a8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
+                0x080046c0                TIM3_IRQHandler()
  .text._Z11CancelTimerPFvvE
-                0x0800478c       0xd0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
-                0x0800478c                CancelTimer(void (*)())
+                0x08004868       0xd0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
+                0x08004868                CancelTimer(void (*)())
  .text._Z14SPI_Initializev
-                0x0800485c      0x1a4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
-                0x0800485c                SPI_Initialize()
+                0x08004938      0x1a4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+                0x08004938                SPI_Initialize()
  .text._Z12UpdateMasterv
-                0x08004a00      0x418 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
-                0x08004a00                UpdateMaster()
+                0x08004adc      0x418 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+                0x08004adc                UpdateMaster()
  .text._Z19Invoke_SPI_Transferv
-                0x08004e18      0x198 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
-                0x08004e18                Invoke_SPI_Transfer()
+                0x08004ef4      0x198 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+                0x08004ef4                Invoke_SPI_Transfer()
  .text._Z31WaitTillMasterIsReadyForSpiDatav
-                0x08004fb0      0x114 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
-                0x08004fb0                WaitTillMasterIsReadyForSpiData()
+                0x0800508c      0x114 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+                0x0800508c                WaitTillMasterIsReadyForSpiData()
  .text._Z20Handle_Configurationv
-                0x080050c4      0x14c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
-                0x080050c4                Handle_Configuration()
+                0x080051a0      0x14c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+                0x080051a0                Handle_Configuration()
  .text._Z24Handle_Data_From_Crystalh
-                0x08005210      0x1a4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
-                0x08005210                Handle_Data_From_Crystal(unsigned char)
+                0x080052ec      0x1a4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+                0x080052ec                Handle_Data_From_Crystal(unsigned char)
  .text._Z17USART1_IRQHandlerv
-                0x080053b4      0x144 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
-                0x080053b4                USART1_IRQHandler()
+                0x08005490      0x144 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+                0x08005490                USART1_IRQHandler()
  .text._Z17RCC_Configurationv
-                0x080054f8       0xf4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x080054f8                RCC_Configuration()
+                0x080055d4       0xf4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x080055d4                RCC_Configuration()
  .text._Z18NVIC_Configurationv
-                0x080055ec      0x198 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x080055ec                NVIC_Configuration()
+                0x080056c8      0x198 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x080056c8                NVIC_Configuration()
  .text._Z18GPIO_Configurationv
-                0x08005784      0x3dc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08005784                GPIO_Configuration()
+                0x08005860      0x3dc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08005860                GPIO_Configuration()
  .text._Z17DMA_Configurationv
-                0x08005b60       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08005b60                DMA_Configuration()
+                0x08005c3c       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08005c3c                DMA_Configuration()
  .text._Z17ADC_Configurationv
-                0x08005bdc      0x188 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08005bdc                ADC_Configuration()
+                0x08005cb8      0x188 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08005cb8                ADC_Configuration()
  .text._Z18EXTI_Configurationv
-                0x08005d64        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08005d64                EXTI_Configuration()
+                0x08005e40        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08005e40                EXTI_Configuration()
  .text._Z19USART_Configurationv
-                0x08005d70      0x170 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08005d70                USART_Configuration()
+                0x08005e4c      0x170 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08005e4c                USART_Configuration()
  .text._Z21SysTick_Configurationv
-                0x08005ee0       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08005ee0                SysTick_Configuration()
+                0x08005fbc       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08005fbc                SysTick_Configuration()
  .text._Z12Setup_timer4v
-                0x08005f00       0xd4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08005f00                Setup_timer4()
+                0x08005fdc       0xd4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08005fdc                Setup_timer4()
  .text._Z17TIM_Configurationv
-                0x08005fd4      0x268 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08005fd4                TIM_Configuration()
+                0x080060b0      0x268 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x080060b0                TIM_Configuration()
  .text._Z17MCU_Configurationv
-                0x0800623c       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x0800623c                MCU_Configuration()
+                0x08006318       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08006318                MCU_Configuration()
  .text._Z17I2C_Configurationv
-                0x08006284       0x8c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
-                0x08006284                I2C_Configuration()
+                0x08006360       0x8c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x08006360                I2C_Configuration()
  .text._Z21CheckDigitalInputPorth
-                0x08006310       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x08006310                CheckDigitalInputPort(unsigned char)
+                0x080063ec       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x080063ec                CheckDigitalInputPort(unsigned char)
  .text._Z22CheckDigitalOutputPorth
-                0x0800634c       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x0800634c                CheckDigitalOutputPort(unsigned char)
+                0x08006428       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x08006428                CheckDigitalOutputPort(unsigned char)
  .text._Z20CheckAnalogInputPorth
-                0x08006388       0x2c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x08006388                CheckAnalogInputPort(unsigned char)
+                0x08006464       0x2c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x08006464                CheckAnalogInputPort(unsigned char)
  .text._Z13ConfigDIOPorthh
-                0x080063b4       0xac C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x080063b4                ConfigDIOPort(unsigned char, unsigned char)
+                0x08006490       0xac C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x08006490                ConfigDIOPort(unsigned char, unsigned char)
  .text._Z18DefineControllerIOhhhhhhhhhhhh
-                0x08006460       0xf8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x08006460                DefineControllerIO(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0800653c       0xf8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x0800653c                DefineControllerIO(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
  .text._Z16SetDigitalOutputhh
-                0x08006558       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x08006558                SetDigitalOutput(unsigned char, unsigned char)
+                0x08006634       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x08006634                SetDigitalOutput(unsigned char, unsigned char)
  .text._Z15GetDigitalInputh
-                0x080065c0       0x70 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x080065c0                GetDigitalInput(unsigned char)
+                0x0800669c       0x70 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x0800669c                GetDigitalInput(unsigned char)
  .text._Z14GetAnalogInputh
-                0x08006630       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x08006630                GetAnalogInput(unsigned char)
+                0x0800670c       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x0800670c                GetAnalogInput(unsigned char)
  .text._Z11BlinkOutputh
-                0x0800667c       0xc0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x0800667c                BlinkOutput(unsigned char)
+                0x08006758       0xc0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x08006758                BlinkOutput(unsigned char)
  .text._Z16GetDigitalOutputh
-                0x0800673c       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
-                0x0800673c                GetDigitalOutput(unsigned char)
+                0x08006818       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x08006818                GetDigitalOutput(unsigned char)
  .text._Z12CheckIntPorth
-                0x08006798       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006798                CheckIntPort(unsigned char)
+                0x08006874       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006874                CheckIntPort(unsigned char)
+ .text._Z24RegisterInterruptHandlerhhPFvhhE
+                0x080068b8      0x23c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x080068b8                RegisterInterruptHandler(unsigned char, unsigned char, void (*)(unsigned char, unsigned char))
  .text._Z26UnRegisterInterruptHandlerh
-                0x080067dc       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x080067dc                UnRegisterInterruptHandler(unsigned char)
+                0x08006af4       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006af4                UnRegisterInterruptHandler(unsigned char)
  .text._Z29UnRegisterAllInterruptHandlerv
-                0x08006864       0xa0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006864                UnRegisterAllInterruptHandler()
+                0x08006b7c       0xa0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006b7c                UnRegisterAllInterruptHandler()
  .text._Z20InitializeInterruptsv
-                0x08006904      0x13c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006904                InitializeInterrupts()
+                0x08006c1c      0x13c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006c1c                InitializeInterrupts()
  .text._Z16EXTI0_IRQHandlerv
-                0x08006a40       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006a40                EXTI0_IRQHandler()
+                0x08006d58       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006d58                EXTI0_IRQHandler()
  .text._Z16EXTI1_IRQHandlerv
-                0x08006aa8       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006aa8                EXTI1_IRQHandler()
+                0x08006dc0       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006dc0                EXTI1_IRQHandler()
  .text._Z16EXTI2_IRQHandlerv
-                0x08006b10        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006b10                EXTI2_IRQHandler()
+                0x08006e28        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006e28                EXTI2_IRQHandler()
  .text._Z16EXTI3_IRQHandlerv
-                0x08006b1c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006b1c                EXTI3_IRQHandler()
+                0x08006e34        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006e34                EXTI3_IRQHandler()
  .text._Z16EXTI4_IRQHandlerv
-                0x08006b28        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006b28                EXTI4_IRQHandler()
+                0x08006e40        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006e40                EXTI4_IRQHandler()
  .text._Z18EXTI9_5_IRQHandlerv
-                0x08006b34      0x178 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006b34                EXTI9_5_IRQHandler()
+                0x08006e4c      0x178 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006e4c                EXTI9_5_IRQHandler()
  .text._Z20EXTI15_10_IRQHandlerv
-                0x08006cac      0x1d0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
-                0x08006cac                EXTI15_10_IRQHandler()
+                0x08006fc4      0x1d0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x08006fc4                EXTI15_10_IRQHandler()
  .text._Z5Delaym
-                0x08006e7c       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
-                0x08006e7c                Delay(unsigned long)
+                0x08007194       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x08007194                Delay(unsigned long)
  .text._Z6SetPWMhi
-                0x08006eb8      0x118 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
-                0x08006eb8                SetPWM(unsigned char, int)
+                0x080071d0      0x118 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x080071d0                SetPWM(unsigned char, int)
  .text._Z12SetMotorRealhi
-                0x08006fd0      0x170 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
-                0x08006fd0                SetMotorReal(unsigned char, int)
+                0x080072e8      0x170 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x080072e8                SetMotorReal(unsigned char, int)
  .text._Z15SetMotorRealAlliiiiiiiiii
-                0x08007140      0x108 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
-                0x08007140                SetMotorRealAll(int, int, int, int, int, int, int, int, int, int)
+                0x08007458      0x108 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x08007458                SetMotorRealAll(int, int, int, int, int, int, int, int, int, int)
  .text._Z8SetMotorhi
-                0x08007248       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
-                0x08007248                SetMotor(unsigned char, int)
+                0x08007560       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x08007560                SetMotor(unsigned char, int)
  .text._Z27Set_MotorControl_To_Neutralv
-                0x0800728c       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
-                0x0800728c                Set_MotorControl_To_Neutral()
+                0x080075a4       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x080075a4                Set_MotorControl_To_Neutral()
  .text._Z20Set_MotorControl_Sw1h
-                0x08007314       0xfc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
-                0x08007314                Set_MotorControl_Sw1(unsigned char)
+                0x0800762c       0xfc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x0800762c                Set_MotorControl_Sw1(unsigned char)
  .text._Z20Set_MotorControl_Sw2h
-                0x08007410      0x100 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
-                0x08007410                Set_MotorControl_Sw2(unsigned char)
+                0x08007728      0x100 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x08007728                Set_MotorControl_Sw2(unsigned char)
  .text._Z13PrintToScreenPKcz
-                0x08007510       0x34 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Print.o)
-                0x08007510                PrintToScreen(char const*, ...)
+                0x08007828       0x34 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Print.o)
+                0x08007828                PrintToScreen(char const*, ...)
  .text._Z10PrintErrorPKcz
-                0x08007544       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Print.o)
-                0x08007544                PrintError(char const*, ...)
+                0x0800785c       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Print.o)
+                0x0800785c                PrintError(char const*, ...)
+ .text._ZL13CheckChannelshh
+                0x08007898       0xc0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+ .text._ZL11encoderISR1hh
+                0x08007958       0xf4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+ .text._ZL11encoderISR2hh
+                0x08007a4c      0x130 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+ .text._Z16StartQuadEncoderhhh
+                0x08007b7c       0xc4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+                0x08007b7c                StartQuadEncoder(unsigned char, unsigned char, unsigned char)
+ .text._Z14GetQuadEncoderhh
+                0x08007c40       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+                0x08007c40                GetQuadEncoder(unsigned char, unsigned char)
+ .text._Z17PresetQuadEncoderhhl
+                0x08007cbc       0x74 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+                0x08007cbc                PresetQuadEncoder(unsigned char, unsigned char, long)
  .text._Z12NMIExceptionv
-                0x08007580        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007580                NMIException()
+                0x08007d30        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d30                NMIException()
  .text._Z18HardFaultExceptionv
-                0x0800758c        0x8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x0800758c                HardFaultException()
+                0x08007d3c        0x8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d3c                HardFaultException()
  .text._Z18MemManageExceptionv
-                0x08007594        0x8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007594                MemManageException()
+                0x08007d44        0x8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d44                MemManageException()
  .text._Z17BusFaultExceptionv
-                0x0800759c        0x8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x0800759c                BusFaultException()
+                0x08007d4c        0x8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d4c                BusFaultException()
  .text._Z19UsageFaultExceptionv
-                0x080075a4        0x8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080075a4                UsageFaultException()
+                0x08007d54        0x8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d54                UsageFaultException()
  .text._Z12DebugMonitorv
-                0x080075ac        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080075ac                DebugMonitor()
+                0x08007d5c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d5c                DebugMonitor()
  .text._Z10SVCHandlerv
-                0x080075b8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080075b8                SVCHandler()
+                0x08007d68        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d68                SVCHandler()
  .text._Z7PendSVCv
-                0x080075c4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080075c4                PendSVC()
+                0x08007d74        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d74                PendSVC()
  .text._Z15WWDG_IRQHandlerv
-                0x080075d0        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080075d0                WWDG_IRQHandler()
+                0x08007d80        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d80                WWDG_IRQHandler()
  .text._Z14PVD_IRQHandlerv
-                0x080075dc        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080075dc                PVD_IRQHandler()
+                0x08007d8c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d8c                PVD_IRQHandler()
  .text._Z17TAMPER_IRQHandlerv
-                0x080075e8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080075e8                TAMPER_IRQHandler()
+                0x08007d98        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007d98                TAMPER_IRQHandler()
  .text._Z14RTC_IRQHandlerv
-                0x080075f4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080075f4                RTC_IRQHandler()
+                0x08007da4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007da4                RTC_IRQHandler()
  .text._Z16FLASH_IRQHandlerv
-                0x08007600        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007600                FLASH_IRQHandler()
+                0x08007db0        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007db0                FLASH_IRQHandler()
  .text._Z14RCC_IRQHandlerv
-                0x0800760c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x0800760c                RCC_IRQHandler()
+                0x08007dbc        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007dbc                RCC_IRQHandler()
  .text._Z24DMA1_Channel1_IRQHandlerv
-                0x08007618        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007618                DMA1_Channel1_IRQHandler()
+                0x08007dc8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007dc8                DMA1_Channel1_IRQHandler()
  .text._Z24DMA1_Channel2_IRQHandlerv
-                0x08007624        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007624                DMA1_Channel2_IRQHandler()
+                0x08007dd4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007dd4                DMA1_Channel2_IRQHandler()
  .text._Z24DMA1_Channel3_IRQHandlerv
-                0x08007630        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007630                DMA1_Channel3_IRQHandler()
+                0x08007de0        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007de0                DMA1_Channel3_IRQHandler()
  .text._Z24DMA1_Channel4_IRQHandlerv
-                0x0800763c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x0800763c                DMA1_Channel4_IRQHandler()
+                0x08007dec        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007dec                DMA1_Channel4_IRQHandler()
  .text._Z24DMA1_Channel5_IRQHandlerv
-                0x08007648        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007648                DMA1_Channel5_IRQHandler()
+                0x08007df8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007df8                DMA1_Channel5_IRQHandler()
  .text._Z24DMA1_Channel6_IRQHandlerv
-                0x08007654        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007654                DMA1_Channel6_IRQHandler()
+                0x08007e04        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e04                DMA1_Channel6_IRQHandler()
  .text._Z24DMA1_Channel7_IRQHandlerv
-                0x08007660        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007660                DMA1_Channel7_IRQHandler()
+                0x08007e10        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e10                DMA1_Channel7_IRQHandler()
  .text._Z17ADC1_2_IRQHandlerv
-                0x0800766c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x0800766c                ADC1_2_IRQHandler()
+                0x08007e1c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e1c                ADC1_2_IRQHandler()
  .text._Z24USB_HP_CAN_TX_IRQHandlerv
-                0x08007678        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007678                USB_HP_CAN_TX_IRQHandler()
+                0x08007e28        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e28                USB_HP_CAN_TX_IRQHandler()
  .text._Z25USB_LP_CAN_RX0_IRQHandlerv
-                0x08007684        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007684                USB_LP_CAN_RX0_IRQHandler()
+                0x08007e34        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e34                USB_LP_CAN_RX0_IRQHandler()
  .text._Z18CAN_RX1_IRQHandlerv
-                0x08007690        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007690                CAN_RX1_IRQHandler()
+                0x08007e40        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e40                CAN_RX1_IRQHandler()
  .text._Z18CAN_SCE_IRQHandlerv
-                0x0800769c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x0800769c                CAN_SCE_IRQHandler()
+                0x08007e4c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e4c                CAN_SCE_IRQHandler()
  .text._Z19TIM1_BRK_IRQHandlerv
-                0x080076a8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080076a8                TIM1_BRK_IRQHandler()
+                0x08007e58        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e58                TIM1_BRK_IRQHandler()
  .text._Z18TIM1_UP_IRQHandlerv
-                0x080076b4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080076b4                TIM1_UP_IRQHandler()
+                0x08007e64        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e64                TIM1_UP_IRQHandler()
  .text._Z23TIM1_TRG_COM_IRQHandlerv
-                0x080076c0        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080076c0                TIM1_TRG_COM_IRQHandler()
+                0x08007e70        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e70                TIM1_TRG_COM_IRQHandler()
  .text._Z18TIM1_CC_IRQHandlerv
-                0x080076cc       0x8c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080076cc                TIM1_CC_IRQHandler()
+                0x08007e7c       0x8c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007e7c                TIM1_CC_IRQHandler()
  .text._Z15TIM4_IRQHandlerv
-                0x08007758       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007758                TIM4_IRQHandler()
+                0x08007f08       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007f08                TIM4_IRQHandler()
  .text._Z18I2C1_EV_IRQHandlerv
-                0x08007790      0x68c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007790                I2C1_EV_IRQHandler()
+                0x08007f40      0x68c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08007f40                I2C1_EV_IRQHandler()
  .text._Z18I2C1_ER_IRQHandlerv
-                0x08007e1c       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007e1c                I2C1_ER_IRQHandler()
+                0x080085cc       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080085cc                I2C1_ER_IRQHandler()
  .text._Z18I2C2_EV_IRQHandlerv
-                0x08007e7c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007e7c                I2C2_EV_IRQHandler()
+                0x0800862c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x0800862c                I2C2_EV_IRQHandler()
  .text._Z18I2C2_ER_IRQHandlerv
-                0x08007e88        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007e88                I2C2_ER_IRQHandler()
+                0x08008638        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008638                I2C2_ER_IRQHandler()
  .text._Z15SPI1_IRQHandlerv
-                0x08007e94        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007e94                SPI1_IRQHandler()
+                0x08008644        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008644                SPI1_IRQHandler()
  .text._Z15SPI2_IRQHandlerv
-                0x08007ea0        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007ea0                SPI2_IRQHandler()
+                0x08008650        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008650                SPI2_IRQHandler()
  .text._Z19RTCAlarm_IRQHandlerv
-                0x08007eac        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007eac                RTCAlarm_IRQHandler()
+                0x0800865c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x0800865c                RTCAlarm_IRQHandler()
  .text._Z20USBWakeUp_IRQHandlerv
-                0x08007eb8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007eb8                USBWakeUp_IRQHandler()
+                0x08008668        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008668                USBWakeUp_IRQHandler()
  .text._Z19TIM8_BRK_IRQHandlerv
-                0x08007ec4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007ec4                TIM8_BRK_IRQHandler()
+                0x08008674        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008674                TIM8_BRK_IRQHandler()
  .text._Z18TIM8_UP_IRQHandlerv
-                0x08007ed0        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007ed0                TIM8_UP_IRQHandler()
+                0x08008680        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008680                TIM8_UP_IRQHandler()
  .text._Z23TIM8_TRG_COM_IRQHandlerv
-                0x08007edc        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007edc                TIM8_TRG_COM_IRQHandler()
+                0x0800868c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x0800868c                TIM8_TRG_COM_IRQHandler()
  .text._Z18TIM8_CC_IRQHandlerv
-                0x08007ee8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007ee8                TIM8_CC_IRQHandler()
+                0x08008698        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008698                TIM8_CC_IRQHandler()
  .text._Z15ADC3_IRQHandlerv
-                0x08007ef4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007ef4                ADC3_IRQHandler()
+                0x080086a4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080086a4                ADC3_IRQHandler()
  .text._Z15FSMC_IRQHandlerv
-                0x08007f00        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f00                FSMC_IRQHandler()
+                0x080086b0        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080086b0                FSMC_IRQHandler()
  .text._Z15SDIO_IRQHandlerv
-                0x08007f0c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f0c                SDIO_IRQHandler()
+                0x080086bc        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080086bc                SDIO_IRQHandler()
  .text._Z15TIM5_IRQHandlerv
-                0x08007f18        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f18                TIM5_IRQHandler()
+                0x080086c8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080086c8                TIM5_IRQHandler()
  .text._Z15SPI3_IRQHandlerv
-                0x08007f24        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f24                SPI3_IRQHandler()
+                0x080086d4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080086d4                SPI3_IRQHandler()
  .text._Z16UART4_IRQHandlerv
-                0x08007f30        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f30                UART4_IRQHandler()
+                0x080086e0        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080086e0                UART4_IRQHandler()
  .text._Z16UART5_IRQHandlerv
-                0x08007f3c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f3c                UART5_IRQHandler()
+                0x080086ec        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080086ec                UART5_IRQHandler()
  .text._Z15TIM6_IRQHandlerv
-                0x08007f48        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f48                TIM6_IRQHandler()
+                0x080086f8        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x080086f8                TIM6_IRQHandler()
  .text._Z15TIM7_IRQHandlerv
-                0x08007f54        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f54                TIM7_IRQHandler()
+                0x08008704        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008704                TIM7_IRQHandler()
  .text._Z24DMA2_Channel1_IRQHandlerv
-                0x08007f60        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f60                DMA2_Channel1_IRQHandler()
+                0x08008710        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008710                DMA2_Channel1_IRQHandler()
  .text._Z24DMA2_Channel2_IRQHandlerv
-                0x08007f6c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f6c                DMA2_Channel2_IRQHandler()
+                0x0800871c        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x0800871c                DMA2_Channel2_IRQHandler()
  .text._Z24DMA2_Channel3_IRQHandlerv
-                0x08007f78      0x13c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x08007f78                DMA2_Channel3_IRQHandler()
+                0x08008728      0x13c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008728                DMA2_Channel3_IRQHandler()
  .text._Z26DMA2_Channel4_5_IRQHandlerv
-                0x080080b4        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x080080b4                DMA2_Channel4_5_IRQHandler()
+                0x08008864        0xc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x08008864                DMA2_Channel4_5_IRQHandler()
  .text._Z6GetKeyv
-                0x080080c0       0x58 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
-                0x080080c0                GetKey()
+                0x08008870       0x58 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
+                0x08008870                GetKey()
  .text._Z13SendCharUart1i
-                0x08008118       0xa0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
-                0x08008118                SendCharUart1(int)
+                0x080088c8       0xa0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
+                0x080088c8                SendCharUart1(int)
  .text._Z22Handle_Debug_Input_Exth
-                0x080081b8      0x33c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
-                0x080081b8                Handle_Debug_Input_Ext(unsigned char)
+                0x08008968      0x33c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
+                0x08008968                Handle_Debug_Input_Ext(unsigned char)
  .text._Z24Process_Debug_Stream_Extv
-                0x080084f4      0x554 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
-                0x080084f4                Process_Debug_Stream_Ext()
+                0x08008ca4      0x554 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
+                0x08008ca4                Process_Debug_Stream_Ext()
  .text._Z17USART2_IRQHandlerv
-                0x08008a48      0x148 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
-                0x08008a48                USART2_IRQHandler()
+                0x080091f8      0x148 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
+                0x080091f8                USART2_IRQHandler()
  .text._Z17USART3_IRQHandlerv
-                0x08008b90      0x14c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
-                0x08008b90                USART3_IRQHandler()
+                0x08009340      0x14c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
+                0x08009340                USART3_IRQHandler()
  .text._Z26Process_Data_From_Local_IOv
-                0x08008cdc       0x90 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
-                0x08008cdc                Process_Data_From_Local_IO()
+                0x0800948c       0x90 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
+                0x0800948c                Process_Data_From_Local_IO()
  .text._ZL7MyDelaym
-                0x08008d6c       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x0800951c       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
  .text._Z18InitI2cDeviceTablev
-                0x08008da8       0xe0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x08008da8                InitI2cDeviceTable()
+                0x08009558       0xe0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009558                InitI2cDeviceTable()
  .text._ZL9Reset_I2cv
-                0x08008e88       0x58 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009638       0x58 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
  .text._Z22Clear_I2C_Status_Flagsv
-                0x08008ee0       0xf8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x08008ee0                Clear_I2C_Status_Flags()
+                0x08009690       0xf8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009690                Clear_I2C_Status_Flags()
  .text._ZL15Execute_Commandv
-                0x08008fd8       0x80 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009788       0x80 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
  .text._ZL17Int_ChangeAddressh
-                0x08009058       0x70 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009808       0x70 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
  .text._Z22Int_General_Call_Resetv
-                0x080090c8       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x080090c8                Int_General_Call_Reset()
+                0x08009878       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009878                Int_General_Call_Reset()
  .text._ZL18Int_PropagateClockhh
-                0x08009144       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x080098f4       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
  .text._ZL15Int_CheckDeviceh
-                0x080091a4       0x50 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009954       0x50 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
  .text._ZL11ResetI2CBusv
-                0x080091f4       0x18 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x080099a4       0x18 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
  .text._Z15I2C_InitDevicesPhS_S_
-                0x0800920c      0x2f0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x0800920c                I2C_InitDevices(unsigned char*, unsigned char*, unsigned char*)
+                0x080099bc      0x2f0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x080099bc                I2C_InitDevices(unsigned char*, unsigned char*, unsigned char*)
  .text._Z9UpdateI2Cv
-                0x080094fc      0x188 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x080094fc                UpdateI2C()
+                0x08009cac      0x188 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009cac                UpdateI2C()
  .text._Z27InitIntegratedMotorEncodersv
-                0x08009684       0xe4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x08009684                InitIntegratedMotorEncoders()
+                0x08009e34       0xe4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009e34                InitIntegratedMotorEncoders()
  .text._Z14DefineImeTablehhhhhhhhhh
-                0x08009768      0x210 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x08009768                DefineImeTable(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x08009f18      0x210 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x08009f18                DefineImeTable(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
  .text._Z16DefineMotorTypeshhhhhhhhhh
-                0x08009978       0xa8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x08009978                DefineMotorTypes(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0800a128       0xa8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x0800a128                DefineMotorTypes(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
  .text._Z15StopAudioPlayerv
-                0x08009a20       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioPlayer.o)
-                0x08009a20                StopAudioPlayer()
+                0x0800a1d0       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioPlayer.o)
+                0x0800a1d0                StopAudioPlayer()
  .text._Z15GetToneFromListPiS_
-                0x08009a80       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
-                0x08009a80                GetToneFromList(int*, int*)
+                0x0800a230       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x0800a230                GetToneFromList(int*, int*)
  .text._Z14ClearTonesListv
-                0x08009ae4       0x74 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
-                0x08009ae4                ClearTonesList()
+                0x0800a294       0x74 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x0800a294                ClearTonesList()
  .text._Z21UpdateTonePlayerTimerii
-                0x08009b58       0xa4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
-                0x08009b58                UpdateTonePlayerTimer(int, int)
+                0x0800a308       0xa4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x0800a308                UpdateTonePlayerTimer(int, int)
  .text._Z8PlayToneii
-                0x08009bfc       0x94 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
-                0x08009bfc                PlayTone(int, int)
+                0x0800a3ac       0x94 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x0800a3ac                PlayTone(int, int)
  .text._Z12PlayNextTonev
-                0x08009c90       0x70 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
-                0x08009c90                PlayNextTone()
+                0x0800a440       0x70 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x0800a440                PlayNextTone()
  .text._Z16RtttlToneHandlerv
-                0x08009d00      0x104 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
-                0x08009d00                RtttlToneHandler()
+                0x0800a4b0      0x104 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x0800a4b0                RtttlToneHandler()
  .text._Z15StopRtttlPlayerv
-                0x08009e04       0x24 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
-                0x08009e04                StopRtttlPlayer()
+                0x0800a5b4       0x24 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x0800a5b4                StopRtttlPlayer()
  .text._Z16ReadWaveFileDataPh
-                0x08009e28       0x90 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
-                0x08009e28                ReadWaveFileData(unsigned char*)
+                0x0800a5d8       0x90 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
+                0x0800a5d8                ReadWaveFileData(unsigned char*)
  .text._Z14StopWavePlayerv
-                0x08009eb8       0x34 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
-                0x08009eb8                StopWavePlayer()
+                0x0800a668       0x34 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
+                0x0800a668                StopWavePlayer()
  .text._Z23DecrementWaveDataLengtht
-                0x08009eec       0xe4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
-                0x08009eec                DecrementWaveDataLength(unsigned short)
+                0x0800a69c       0xe4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
+                0x0800a69c                DecrementWaveDataLength(unsigned short)
  .text._Z10ADC_DeInitP11ADC_TypeDef
-                0x08009fd0       0x8c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x08009fd0                ADC_DeInit(ADC_TypeDef*)
+                0x0800a780       0x8c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800a780                ADC_DeInit(ADC_TypeDef*)
  .text._Z8ADC_InitP11ADC_TypeDefP15ADC_InitTypeDef
-                0x0800a05c       0xc4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a05c                ADC_Init(ADC_TypeDef*, ADC_InitTypeDef*)
+                0x0800a80c       0xc4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800a80c                ADC_Init(ADC_TypeDef*, ADC_InitTypeDef*)
  .text._Z7ADC_CmdP11ADC_TypeDef15FunctionalState
-                0x0800a120       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a120                ADC_Cmd(ADC_TypeDef*, FunctionalState)
+                0x0800a8d0       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800a8d0                ADC_Cmd(ADC_TypeDef*, FunctionalState)
  .text._Z10ADC_DMACmdP11ADC_TypeDef15FunctionalState
-                0x0800a158       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a158                ADC_DMACmd(ADC_TypeDef*, FunctionalState)
+                0x0800a908       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800a908                ADC_DMACmd(ADC_TypeDef*, FunctionalState)
  .text._Z20ADC_ResetCalibrationP11ADC_TypeDef
-                0x0800a190       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a190                ADC_ResetCalibration(ADC_TypeDef*)
+                0x0800a940       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800a940                ADC_ResetCalibration(ADC_TypeDef*)
  .text._Z29ADC_GetResetCalibrationStatusP11ADC_TypeDef
-                0x0800a1b0       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a1b0                ADC_GetResetCalibrationStatus(ADC_TypeDef*)
+                0x0800a960       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800a960                ADC_GetResetCalibrationStatus(ADC_TypeDef*)
  .text._Z20ADC_StartCalibrationP11ADC_TypeDef
-                0x0800a1f0       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a1f0                ADC_StartCalibration(ADC_TypeDef*)
+                0x0800a9a0       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800a9a0                ADC_StartCalibration(ADC_TypeDef*)
  .text._Z24ADC_GetCalibrationStatusP11ADC_TypeDef
-                0x0800a210       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a210                ADC_GetCalibrationStatus(ADC_TypeDef*)
+                0x0800a9c0       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800a9c0                ADC_GetCalibrationStatus(ADC_TypeDef*)
  .text._Z24ADC_SoftwareStartConvCmdP11ADC_TypeDef15FunctionalState
-                0x0800a250       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a250                ADC_SoftwareStartConvCmd(ADC_TypeDef*, FunctionalState)
+                0x0800aa00       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800aa00                ADC_SoftwareStartConvCmd(ADC_TypeDef*, FunctionalState)
  .text._Z24ADC_RegularChannelConfigP11ADC_TypeDefhhh
-                0x0800a288      0x1d0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
-                0x0800a288                ADC_RegularChannelConfig(ADC_TypeDef*, unsigned char, unsigned char, unsigned char)
+                0x0800aa38      0x1d0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x0800aa38                ADC_RegularChannelConfig(ADC_TypeDef*, unsigned char, unsigned char, unsigned char)
  .text._Z10DMA_DeInitP19DMA_Channel_TypeDef
-                0x0800a458      0x240 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
-                0x0800a458                DMA_DeInit(DMA_Channel_TypeDef*)
+                0x0800ac08      0x240 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
+                0x0800ac08                DMA_DeInit(DMA_Channel_TypeDef*)
  .text._Z8DMA_InitP19DMA_Channel_TypeDefP15DMA_InitTypeDef
-                0x0800a698       0x84 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
-                0x0800a698                DMA_Init(DMA_Channel_TypeDef*, DMA_InitTypeDef*)
+                0x0800ae48       0x84 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
+                0x0800ae48                DMA_Init(DMA_Channel_TypeDef*, DMA_InitTypeDef*)
  .text._Z7DMA_CmdP19DMA_Channel_TypeDef15FunctionalState
-                0x0800a71c       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
-                0x0800a71c                DMA_Cmd(DMA_Channel_TypeDef*, FunctionalState)
+                0x0800aecc       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
+                0x0800aecc                DMA_Cmd(DMA_Channel_TypeDef*, FunctionalState)
  .text._Z12DMA_ITConfigP19DMA_Channel_TypeDefm15FunctionalState
-                0x0800a754       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
-                0x0800a754                DMA_ITConfig(DMA_Channel_TypeDef*, unsigned long, FunctionalState)
+                0x0800af04       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
+                0x0800af04                DMA_ITConfig(DMA_Channel_TypeDef*, unsigned long, FunctionalState)
  .text._Z17DMA_GetFlagStatusm
-                0x0800a794       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
-                0x0800a794                DMA_GetFlagStatus(unsigned long)
+                0x0800af44       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
+                0x0800af44                DMA_GetFlagStatus(unsigned long)
  .text._Z16EXTI_GetITStatusm
-                0x0800a7f4       0x70 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_exti.o)
-                0x0800a7f4                EXTI_GetITStatus(unsigned long)
+                0x0800afa4       0x70 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_exti.o)
+                0x0800afa4                EXTI_GetITStatus(unsigned long)
  .text._Z22EXTI_ClearITPendingBitm
-                0x0800a864       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_exti.o)
-                0x0800a864                EXTI_ClearITPendingBit(unsigned long)
+                0x0800b014       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_exti.o)
+                0x0800b014                EXTI_ClearITPendingBit(unsigned long)
  .text._Z16FLASH_SetLatencym
-                0x0800a884       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800a884                FLASH_SetLatency(unsigned long)
+                0x0800b034       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b034                FLASH_SetLatency(unsigned long)
  .text._Z23FLASH_PrefetchBufferCmdm
-                0x0800a8cc       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800a8cc                FLASH_PrefetchBufferCmd(unsigned long)
+                0x0800b07c       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b07c                FLASH_PrefetchBufferCmd(unsigned long)
  .text._Z12FLASH_Unlockv
-                0x0800a914       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800a914                FLASH_Unlock()
+                0x0800b0c4       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b0c4                FLASH_Unlock()
  .text._Z10FLASH_Lockv
-                0x0800a944       0x24 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800a944                FLASH_Lock()
+                0x0800b0f4       0x24 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b0f4                FLASH_Lock()
  .text._Z15FLASH_ErasePagem
-                0x0800a968       0x98 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800a968                FLASH_ErasePage(unsigned long)
+                0x0800b118       0x98 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b118                FLASH_ErasePage(unsigned long)
  .text._Z17FLASH_ProgramWordmm
-                0x0800aa00       0xc8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800aa00                FLASH_ProgramWord(unsigned long, unsigned long)
+                0x0800b1b0       0xc8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b1b0                FLASH_ProgramWord(unsigned long, unsigned long)
  .text._Z15FLASH_ClearFlagt
-                0x0800aac8       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800aac8                FLASH_ClearFlag(unsigned short)
+                0x0800b278       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b278                FLASH_ClearFlag(unsigned short)
  .text._Z15FLASH_GetStatusv
-                0x0800aae8       0x84 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800aae8                FLASH_GetStatus()
+                0x0800b298       0x84 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b298                FLASH_GetStatus()
  .text._Z26FLASH_WaitForLastOperationm
-                0x0800ab6c       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
-                0x0800ab6c                FLASH_WaitForLastOperation(unsigned long)
+                0x0800b31c       0x60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b31c                FLASH_WaitForLastOperation(unsigned long)
  .text._ZL5delayv
-                0x0800abcc       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x0800b37c       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
  .text._Z9GPIO_InitP12GPIO_TypeDefP16GPIO_InitTypeDef
-                0x0800ac04      0x1d4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
-                0x0800ac04                GPIO_Init(GPIO_TypeDef*, GPIO_InitTypeDef*)
+                0x0800b3b4      0x1d4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
+                0x0800b3b4                GPIO_Init(GPIO_TypeDef*, GPIO_InitTypeDef*)
  .text._Z21GPIO_ReadInputDataBitP12GPIO_TypeDeft
-                0x0800add8       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
-                0x0800add8                GPIO_ReadInputDataBit(GPIO_TypeDef*, unsigned short)
+                0x0800b588       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
+                0x0800b588                GPIO_ReadInputDataBit(GPIO_TypeDef*, unsigned short)
  .text._Z22GPIO_ReadOutputDataBitP12GPIO_TypeDeft
-                0x0800ae20       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
-                0x0800ae20                GPIO_ReadOutputDataBit(GPIO_TypeDef*, unsigned short)
+                0x0800b5d0       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
+                0x0800b5d0                GPIO_ReadOutputDataBit(GPIO_TypeDef*, unsigned short)
  .text._Z12GPIO_SetBitsP12GPIO_TypeDeft
-                0x0800ae68       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
-                0x0800ae68                GPIO_SetBits(GPIO_TypeDef*, unsigned short)
+                0x0800b618       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
+                0x0800b618                GPIO_SetBits(GPIO_TypeDef*, unsigned short)
  .text._Z14GPIO_ResetBitsP12GPIO_TypeDeft
-                0x0800ae84       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
-                0x0800ae84                GPIO_ResetBits(GPIO_TypeDef*, unsigned short)
+                0x0800b634       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
+                0x0800b634                GPIO_ResetBits(GPIO_TypeDef*, unsigned short)
  .text._Z13GPIO_WriteBitP12GPIO_TypeDeft9BitAction
-                0x0800aea0       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
-                0x0800aea0                GPIO_WriteBit(GPIO_TypeDef*, unsigned short, BitAction)
+                0x0800b650       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
+                0x0800b650                GPIO_WriteBit(GPIO_TypeDef*, unsigned short, BitAction)
  .text._Z19GPIO_PinRemapConfigm15FunctionalState
-                0x0800aed0       0xfc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
-                0x0800aed0                GPIO_PinRemapConfig(unsigned long, FunctionalState)
+                0x0800b680       0xfc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
+                0x0800b680                GPIO_PinRemapConfig(unsigned long, FunctionalState)
  .text._Z10I2C_DeInitP11I2C_TypeDef
-                0x0800afcc       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800afcc                I2C_DeInit(I2C_TypeDef*)
+                0x0800b77c       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800b77c                I2C_DeInit(I2C_TypeDef*)
  .text._Z8I2C_InitP11I2C_TypeDefP15I2C_InitTypeDef
-                0x0800b030      0x1b8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b030                I2C_Init(I2C_TypeDef*, I2C_InitTypeDef*)
+                0x0800b7e0      0x1b8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800b7e0                I2C_Init(I2C_TypeDef*, I2C_InitTypeDef*)
  .text._Z7I2C_CmdP11I2C_TypeDef15FunctionalState
-                0x0800b1e8       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b1e8                I2C_Cmd(I2C_TypeDef*, FunctionalState)
+                0x0800b998       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800b998                I2C_Cmd(I2C_TypeDef*, FunctionalState)
  .text._Z17I2C_GenerateSTARTP11I2C_TypeDef15FunctionalState
-                0x0800b228       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b228                I2C_GenerateSTART(I2C_TypeDef*, FunctionalState)
+                0x0800b9d8       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800b9d8                I2C_GenerateSTART(I2C_TypeDef*, FunctionalState)
  .text._Z16I2C_GenerateSTOPP11I2C_TypeDef15FunctionalState
-                0x0800b268       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b268                I2C_GenerateSTOP(I2C_TypeDef*, FunctionalState)
+                0x0800ba18       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800ba18                I2C_GenerateSTOP(I2C_TypeDef*, FunctionalState)
  .text._Z21I2C_AcknowledgeConfigP11I2C_TypeDef15FunctionalState
-                0x0800b2a8       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b2a8                I2C_AcknowledgeConfig(I2C_TypeDef*, FunctionalState)
+                0x0800ba58       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800ba58                I2C_AcknowledgeConfig(I2C_TypeDef*, FunctionalState)
  .text._Z12I2C_ITConfigP11I2C_TypeDeft15FunctionalState
-                0x0800b2e8       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b2e8                I2C_ITConfig(I2C_TypeDef*, unsigned short, FunctionalState)
+                0x0800ba98       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800ba98                I2C_ITConfig(I2C_TypeDef*, unsigned short, FunctionalState)
  .text._Z12I2C_SendDataP11I2C_TypeDefh
-                0x0800b334       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b334                I2C_SendData(I2C_TypeDef*, unsigned char)
+                0x0800bae4       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800bae4                I2C_SendData(I2C_TypeDef*, unsigned char)
  .text._Z15I2C_ReceiveDataP11I2C_TypeDef
-                0x0800b354       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b354                I2C_ReceiveData(I2C_TypeDef*)
+                0x0800bb04       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800bb04                I2C_ReceiveData(I2C_TypeDef*)
  .text._Z19I2C_Send7bitAddressP11I2C_TypeDefhh
-                0x0800b370       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b370                I2C_Send7bitAddress(I2C_TypeDef*, unsigned char, unsigned char)
+                0x0800bb20       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800bb20                I2C_Send7bitAddress(I2C_TypeDef*, unsigned char, unsigned char)
  .text._Z16I2C_GetLastEventP11I2C_TypeDef
-                0x0800b3ac       0x50 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b3ac                I2C_GetLastEvent(I2C_TypeDef*)
+                0x0800bb5c       0x50 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800bb5c                I2C_GetLastEvent(I2C_TypeDef*)
  .text._Z15I2C_GetITStatusP11I2C_TypeDefm
-                0x0800b3fc       0x78 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b3fc                I2C_GetITStatus(I2C_TypeDef*, unsigned long)
+                0x0800bbac       0x78 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800bbac                I2C_GetITStatus(I2C_TypeDef*, unsigned long)
  .text._Z21I2C_ClearITPendingBitP11I2C_TypeDefm
-                0x0800b474       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
-                0x0800b474                I2C_ClearITPendingBit(I2C_TypeDef*, unsigned long)
+                0x0800bc24       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0800bc24                I2C_ClearITPendingBit(I2C_TypeDef*, unsigned long)
  .text._Z24NVIC_PriorityGroupConfigm
-                0x0800b4a4       0x28 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
-                0x0800b4a4                NVIC_PriorityGroupConfig(unsigned long)
+                0x0800bc54       0x28 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
+                0x0800bc54                NVIC_PriorityGroupConfig(unsigned long)
  .text._Z9NVIC_InitP16NVIC_InitTypeDef
-                0x0800b4cc      0x15c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
-                0x0800b4cc                NVIC_Init(NVIC_InitTypeDef*)
+                0x0800bc7c      0x15c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
+                0x0800bc7c                NVIC_Init(NVIC_InitTypeDef*)
  .text._Z19NVIC_SetVectorTablemm
-                0x0800b628       0x2c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
-                0x0800b628                NVIC_SetVectorTable(unsigned long, unsigned long)
+                0x0800bdd8       0x2c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
+                0x0800bdd8                NVIC_SetVectorTable(unsigned long, unsigned long)
  .text._Z22NVIC_GenerateCoreResetv
-                0x0800b654       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
-                0x0800b654                NVIC_GenerateCoreReset()
+                0x0800be04       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
+                0x0800be04                NVIC_GenerateCoreReset()
  .text._Z10RCC_DeInitv
-                0x0800b670       0xa0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b670                RCC_DeInit()
+                0x0800be20       0xa0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800be20                RCC_DeInit()
  .text._Z13RCC_HSEConfigm
-                0x0800b710       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b710                RCC_HSEConfig(unsigned long)
+                0x0800bec0       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800bec0                RCC_HSEConfig(unsigned long)
  .text._Z21RCC_WaitForHSEStartUpv
-                0x0800b798       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b798                RCC_WaitForHSEStartUp()
+                0x0800bf48       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800bf48                RCC_WaitForHSEStartUp()
  .text._Z13RCC_PLLConfigmm
-                0x0800b814       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b814                RCC_PLLConfig(unsigned long, unsigned long)
+                0x0800bfc4       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800bfc4                RCC_PLLConfig(unsigned long, unsigned long)
  .text._Z10RCC_PLLCmd15FunctionalState
-                0x0800b860       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b860                RCC_PLLCmd(FunctionalState)
+                0x0800c010       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c010                RCC_PLLCmd(FunctionalState)
  .text._Z16RCC_SYSCLKConfigm
-                0x0800b880       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b880                RCC_SYSCLKConfig(unsigned long)
+                0x0800c030       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c030                RCC_SYSCLKConfig(unsigned long)
  .text._Z19RCC_GetSYSCLKSourcev
-                0x0800b8c4       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b8c4                RCC_GetSYSCLKSource()
+                0x0800c074       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c074                RCC_GetSYSCLKSource()
  .text._Z14RCC_HCLKConfigm
-                0x0800b8e4       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b8e4                RCC_HCLKConfig(unsigned long)
+                0x0800c094       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c094                RCC_HCLKConfig(unsigned long)
  .text._Z15RCC_PCLK1Configm
-                0x0800b928       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b928                RCC_PCLK1Config(unsigned long)
+                0x0800c0d8       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c0d8                RCC_PCLK1Config(unsigned long)
  .text._Z15RCC_PCLK2Configm
-                0x0800b96c       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b96c                RCC_PCLK2Config(unsigned long)
+                0x0800c11c       0x48 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c11c                RCC_PCLK2Config(unsigned long)
  .text._Z16RCC_ADCCLKConfigm
-                0x0800b9b4       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b9b4                RCC_ADCCLKConfig(unsigned long)
+                0x0800c164       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c164                RCC_ADCCLKConfig(unsigned long)
  .text._Z17RCC_GetClocksFreqP17RCC_ClocksTypeDef
-                0x0800b9f8      0x1d4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800b9f8                RCC_GetClocksFreq(RCC_ClocksTypeDef*)
+                0x0800c1a8      0x1d4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c1a8                RCC_GetClocksFreq(RCC_ClocksTypeDef*)
  .text._Z21RCC_AHBPeriphClockCmdm15FunctionalState
-                0x0800bbcc       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800bbcc                RCC_AHBPeriphClockCmd(unsigned long, FunctionalState)
+                0x0800c37c       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c37c                RCC_AHBPeriphClockCmd(unsigned long, FunctionalState)
  .text._Z22RCC_APB2PeriphClockCmdm15FunctionalState
-                0x0800bc28       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800bc28                RCC_APB2PeriphClockCmd(unsigned long, FunctionalState)
+                0x0800c3d8       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c3d8                RCC_APB2PeriphClockCmd(unsigned long, FunctionalState)
  .text._Z22RCC_APB1PeriphClockCmdm15FunctionalState
-                0x0800bc84       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800bc84                RCC_APB1PeriphClockCmd(unsigned long, FunctionalState)
+                0x0800c434       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c434                RCC_APB1PeriphClockCmd(unsigned long, FunctionalState)
  .text._Z22RCC_APB2PeriphResetCmdm15FunctionalState
-                0x0800bce0       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800bce0                RCC_APB2PeriphResetCmd(unsigned long, FunctionalState)
+                0x0800c490       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c490                RCC_APB2PeriphResetCmd(unsigned long, FunctionalState)
  .text._Z22RCC_APB1PeriphResetCmdm15FunctionalState
-                0x0800bd3c       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800bd3c                RCC_APB1PeriphResetCmd(unsigned long, FunctionalState)
+                0x0800c4ec       0x5c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c4ec                RCC_APB1PeriphResetCmd(unsigned long, FunctionalState)
  .text._Z17RCC_GetFlagStatush
-                0x0800bd98       0x90 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
-                0x0800bd98                RCC_GetFlagStatus(unsigned char)
+                0x0800c548       0x90 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x0800c548                RCC_GetFlagStatus(unsigned char)
  .text._Z8SPI_InitP11SPI_TypeDefP15SPI_InitTypeDef
-                0x0800be28       0x98 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
-                0x0800be28                SPI_Init(SPI_TypeDef*, SPI_InitTypeDef*)
+                0x0800c5d8       0x98 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
+                0x0800c5d8                SPI_Init(SPI_TypeDef*, SPI_InitTypeDef*)
  .text._Z7SPI_CmdP11SPI_TypeDef15FunctionalState
-                0x0800bec0       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
-                0x0800bec0                SPI_Cmd(SPI_TypeDef*, FunctionalState)
+                0x0800c670       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
+                0x0800c670                SPI_Cmd(SPI_TypeDef*, FunctionalState)
  .text._Z16SPI_I2S_SendDataP11SPI_TypeDeft
-                0x0800bf00       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
-                0x0800bf00                SPI_I2S_SendData(SPI_TypeDef*, unsigned short)
+                0x0800c6b0       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
+                0x0800c6b0                SPI_I2S_SendData(SPI_TypeDef*, unsigned short)
  .text._Z19SPI_I2S_ReceiveDataP11SPI_TypeDef
-                0x0800bf1c       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
-                0x0800bf1c                SPI_I2S_ReceiveData(SPI_TypeDef*)
+                0x0800c6cc       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
+                0x0800c6cc                SPI_I2S_ReceiveData(SPI_TypeDef*)
  .text._Z21SPI_I2S_GetFlagStatusP11SPI_TypeDeft
-                0x0800bf38       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
-                0x0800bf38                SPI_I2S_GetFlagStatus(SPI_TypeDef*, unsigned short)
+                0x0800c6e8       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
+                0x0800c6e8                SPI_I2S_GetFlagStatus(SPI_TypeDef*, unsigned short)
  .text._Z17SysTick_SetReloadm
-                0x0800bf84       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_systick.o)
-                0x0800bf84                SysTick_SetReload(unsigned long)
+                0x0800c734       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_systick.o)
+                0x0800c734                SysTick_SetReload(unsigned long)
  .text._Z18SysTick_CounterCmdm
-                0x0800bfa4       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_systick.o)
-                0x0800bfa4                SysTick_CounterCmd(unsigned long)
+                0x0800c754       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_systick.o)
+                0x0800c754                SysTick_CounterCmd(unsigned long)
  .text._Z16SysTick_ITConfig15FunctionalState
-                0x0800c008       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_systick.o)
-                0x0800c008                SysTick_ITConfig(FunctionalState)
+                0x0800c7b8       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_systick.o)
+                0x0800c7b8                SysTick_ITConfig(FunctionalState)
  .text._Z10TIM_DeInitP11TIM_TypeDef
-                0x0800c054      0x160 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c054                TIM_DeInit(TIM_TypeDef*)
+                0x0800c804      0x160 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800c804                TIM_DeInit(TIM_TypeDef*)
  .text._Z16TIM_TimeBaseInitP11TIM_TypeDefP23TIM_TimeBaseInitTypeDef
-                0x0800c1b4       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c1b4                TIM_TimeBaseInit(TIM_TypeDef*, TIM_TimeBaseInitTypeDef*)
+                0x0800c964       0x88 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800c964                TIM_TimeBaseInit(TIM_TypeDef*, TIM_TimeBaseInitTypeDef*)
  .text._Z22TIM_TimeBaseStructInitP23TIM_TimeBaseInitTypeDef
-                0x0800c23c       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c23c                TIM_TimeBaseStructInit(TIM_TimeBaseInitTypeDef*)
+                0x0800c9ec       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800c9ec                TIM_TimeBaseStructInit(TIM_TimeBaseInitTypeDef*)
  .text._Z7TIM_CmdP11TIM_TypeDef15FunctionalState
-                0x0800c278       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c278                TIM_Cmd(TIM_TypeDef*, FunctionalState)
+                0x0800ca28       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800ca28                TIM_Cmd(TIM_TypeDef*, FunctionalState)
  .text._Z12TIM_ITConfigP11TIM_TypeDeft15FunctionalState
-                0x0800c2bc       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c2bc                TIM_ITConfig(TIM_TypeDef*, unsigned short, FunctionalState)
+                0x0800ca6c       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800ca6c                TIM_ITConfig(TIM_TypeDef*, unsigned short, FunctionalState)
  .text._Z20TIM_ARRPreloadConfigP11TIM_TypeDef15FunctionalState
-                0x0800c308       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c308                TIM_ARRPreloadConfig(TIM_TypeDef*, FunctionalState)
+                0x0800cab8       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800cab8                TIM_ARRPreloadConfig(TIM_TypeDef*, FunctionalState)
  .text._Z20TIM_OC1PreloadConfigP11TIM_TypeDeft
-                0x0800c34c       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c34c                TIM_OC1PreloadConfig(TIM_TypeDef*, unsigned short)
+                0x0800cafc       0x3c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800cafc                TIM_OC1PreloadConfig(TIM_TypeDef*, unsigned short)
  .text._Z23TIM_SelectOutputTriggerP11TIM_TypeDeft
-                0x0800c388       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c388                TIM_SelectOutputTrigger(TIM_TypeDef*, unsigned short)
+                0x0800cb38       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800cb38                TIM_SelectOutputTrigger(TIM_TypeDef*, unsigned short)
  .text._Z15TIM_GetCapture3P11TIM_TypeDef
-                0x0800c3c0       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c3c0                TIM_GetCapture3(TIM_TypeDef*)
+                0x0800cb70       0x1c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800cb70                TIM_GetCapture3(TIM_TypeDef*)
  .text._Z15TIM_GetITStatusP11TIM_TypeDeft
-                0x0800c3dc       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c3dc                TIM_GetITStatus(TIM_TypeDef*, unsigned short)
+                0x0800cb8c       0x64 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800cb8c                TIM_GetITStatus(TIM_TypeDef*, unsigned short)
  .text._Z21TIM_ClearITPendingBitP11TIM_TypeDeft
-                0x0800c440       0x24 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
-                0x0800c440                TIM_ClearITPendingBit(TIM_TypeDef*, unsigned short)
+                0x0800cbf0       0x24 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x0800cbf0                TIM_ClearITPendingBit(TIM_TypeDef*, unsigned short)
  .text._Z10USART_InitP13USART_TypeDefP17USART_InitTypeDef
-                0x0800c464      0x160 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
-                0x0800c464                USART_Init(USART_TypeDef*, USART_InitTypeDef*)
+                0x0800cc14      0x160 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
+                0x0800cc14                USART_Init(USART_TypeDef*, USART_InitTypeDef*)
  .text._Z9USART_CmdP13USART_TypeDef15FunctionalState
-                0x0800c5c4       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
-                0x0800c5c4                USART_Cmd(USART_TypeDef*, FunctionalState)
+                0x0800cd74       0x40 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
+                0x0800cd74                USART_Cmd(USART_TypeDef*, FunctionalState)
  .text._Z14USART_ITConfigP13USART_TypeDeft15FunctionalState
-                0x0800c604       0xa8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
-                0x0800c604                USART_ITConfig(USART_TypeDef*, unsigned short, FunctionalState)
+                0x0800cdb4       0xa8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
+                0x0800cdb4                USART_ITConfig(USART_TypeDef*, unsigned short, FunctionalState)
  .text._Z17USART_ReceiveDataP13USART_TypeDef
-                0x0800c6ac       0x24 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
-                0x0800c6ac                USART_ReceiveData(USART_TypeDef*)
+                0x0800ce5c       0x24 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
+                0x0800ce5c                USART_ReceiveData(USART_TypeDef*)
  .text._Z7DAC_Cmdm15FunctionalState
-                0x0800c6d0       0x6c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dac.o)
-                0x0800c6d0                DAC_Cmd(unsigned long, FunctionalState)
+                0x0800ce80       0x6c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dac.o)
+                0x0800ce80                DAC_Cmd(unsigned long, FunctionalState)
  .text._Z19DAC_SetChannel1Datamt
-                0x0800c73c       0x28 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dac.o)
-                0x0800c73c                DAC_SetChannel1Data(unsigned long, unsigned short)
+                0x0800ceec       0x28 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dac.o)
+                0x0800ceec                DAC_SetChannel1Data(unsigned long, unsigned short)
  .text.__io_putchar
-                0x0800c764      0x16c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\STM32x_io_putchar_thumb.a(STM32F10X_io_putchar.o)
-                0x0800c764                __io_putchar
- .text._write   0x0800c8d0        0x4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(write.o)
-                0x0800c8d0                _write
- .text.printf   0x0800c8d4       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_printf.o)
-                0x0800c8d4                printf
- *fill*         0x0800c8f4        0x4 00
+                0x0800cf14      0x16c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\STM32x_io_putchar_thumb.a(STM32F10X_io_putchar.o)
+                0x0800cf14                __io_putchar
+ .text._write   0x0800d080        0x4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(write.o)
+                0x0800d080                _write
+ .text.printf   0x0800d084       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_printf.o)
+                0x0800d084                printf
+ *fill*         0x0800d0a4        0x4 00
  .text._vfprintf_r
-                0x0800c8f8      0xcf8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
-                0x0800c8f8                _vfprintf_r
+                0x0800d0a8      0xcf8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
+                0x0800d0a8                _vfprintf_r
  .text.vfprintf
-                0x0800d5f0       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
-                0x0800d5f0                vfprintf
- .text.puts     0x0800d610       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_puts.o)
-                0x0800d610                puts
+                0x0800dda0       0x20 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
+                0x0800dda0                vfprintf
+ .text.puts     0x0800ddc0       0x38 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_puts.o)
+                0x0800ddc0                puts
  .text._SMALL_PRINTF_puts
-                0x0800d648       0x58 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_puts.o)
-                0x0800d648                _SMALL_PRINTF_puts
- .text.sprintf  0x0800d6a0       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_sprintf.o)
-                0x0800d6a0                sprintf
- .text.quorem   0x0800d6ec      0x17c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
- .text._dtoa_r  0x0800d868      0xf60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
-                0x0800d868                _dtoa_r
+                0x0800ddf8       0x58 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_puts.o)
+                0x0800ddf8                _SMALL_PRINTF_puts
+ .text.sprintf  0x0800de50       0x4c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_sprintf.o)
+                0x0800de50                sprintf
+ .text.quorem   0x0800de9c      0x17c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
+ .text._dtoa_r  0x0800e018      0xf60 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
+                0x0800e018                _dtoa_r
  .text._wcsrtombs_r
-                0x0800e7c8       0x90 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_wcsrtombs.o)
-                0x0800e7c8                _wcsrtombs_r
+                0x0800ef78       0x90 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_wcsrtombs.o)
+                0x0800ef78                _wcsrtombs_r
  .text._wcrtomb_r
-                0x0800e858        0x4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_wcrtomb.o)
-                0x0800e858                _wcrtomb_r
+                0x0800f008        0x4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_wcrtomb.o)
+                0x0800f008                _wcrtomb_r
  .text._small_hi0bits
-                0x0800e85c       0x54 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800e85c                _small_hi0bits
+                0x0800f00c       0x54 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f00c                _small_hi0bits
  .text._small_lo0bits
-                0x0800e8b0       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800e8b0                _small_lo0bits
+                0x0800f060       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f060                _small_lo0bits
  .text._small_i2b
-                0x0800e918       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800e918                _small_i2b
+                0x0800f0c8       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f0c8                _small_i2b
  .text._small_multiply
-                0x0800e92c      0x160 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800e92c                _small_multiply
+                0x0800f0dc      0x160 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f0dc                _small_multiply
  .text._small_lshift
-                0x0800ea8c       0xa4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800ea8c                _small_lshift
+                0x0800f23c       0xa4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f23c                _small_lshift
  .text.__small_mcmp
-                0x0800eb30       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800eb30                __small_mcmp
+                0x0800f2e0       0x44 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f2e0                __small_mcmp
  .text.__small_mdiff
-                0x0800eb74       0xfc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800eb74                __small_mdiff
+                0x0800f324       0xfc C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f324                __small_mdiff
  .text._small_d2b
-                0x0800ec70       0xd4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800ec70                _small_d2b
+                0x0800f420       0xd4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f420                _small_d2b
  .text._small_multadd
-                0x0800ed44       0xa8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800ed44                _small_multadd
+                0x0800f4f4       0xa8 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f4f4                _small_multadd
  .text._small_pow5mult
-                0x0800edec      0x138 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800edec                _small_pow5mult
- .text._sbrk    0x0800ef24       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(sbrk.o)
-                0x0800ef24                _sbrk
+                0x0800f59c      0x138 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x0800f59c                _small_pow5mult
+ .text._sbrk    0x0800f6d4       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(sbrk.o)
+                0x0800f6d4                _sbrk
  *(.rodata)
- .rodata        0x0800ef54      0x39c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\Startup.o
- .rodata        0x0800f2f0        0xc C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainIO.o
- .rodata        0x0800f2fc       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
- .rodata        0x0800f378       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
- .rodata        0x0800f3a8       0x28 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
- .rodata        0x0800f3d0       0xc4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
- .rodata        0x0800f494      0x150 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
- .rodata        0x0800f5e4       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
- .rodata        0x0800f5f8      0x184 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
- .rodata        0x0800f77c       0x18 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
- *fill*         0x0800f794        0x4 00
- .rodata        0x0800f798      0x128 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
-                0x0800f798                __small_mprec_tens
-                0x0800f870                __small_mprec_bigtens
-                0x0800f898                __small_mprec_tinytens
+ .rodata        0x0800f704      0x39c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\Startup.o
+ .rodata        0x0800faa0        0xc C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainIO.o
+ .rodata        0x0800faac       0x1c C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+ .rodata        0x0800fac8       0x7c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+ .rodata        0x0800fb44       0x30 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+ .rodata        0x0800fb74       0x28 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+ .rodata        0x0800fb9c       0xc4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+ .rodata        0x0800fc60       0xe0 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+ .rodata        0x0800fd40      0x150 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+ .rodata        0x0800fe90       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+ .rodata        0x0800fea4      0x184 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
+ .rodata        0x08010028       0x18 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
+ .rodata        0x08010040      0x128 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x08010040                __small_mprec_tens
+                0x08010118                __small_mprec_bigtens
+                0x08010140                __small_mprec_tinytens
  *(.rodata*)
  .rodata.str1.4
-                0x0800f8c0       0x5a C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
+                0x08010168       0x5a C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
                                  0x5c (size before relaxing)
- *fill*         0x0800f91a        0x2 00
+ *fill*         0x080101c2        0x2 00
  .rodata.str1.4
-                0x0800f91c        0x9 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
+                0x080101c4        0x9 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
                                  0x14 (size before relaxing)
- *fill*         0x0800f925        0x3 00
+ *fill*         0x080101cd        0x3 00
  .rodata.str1.4
-                0x0800f928        0x4 c:/program files (x86)/intelitek/easyc v6/cortex/tools/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x080101d0        0x4 c:/program files (x86)/intelitek/easyc v6/cortex/tools/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
-                0x0800f92c                . = ALIGN (0x4)
-                0x0800f92c                _etext = .
-                0x0800f92c                _sidata = _etext
+                0x080101d4                . = ALIGN (0x4)
+                0x080101d4                _etext = .
+                0x080101d4                _sidata = _etext
 
-.vfp11_veneer   0x0800f92c        0x0
+.vfp11_veneer   0x080101d4        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x0800f92c        0x0
+.v4_bx          0x080101d4        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.data           0x20000000      0x5e8 load address 0x0800f92c
+.data           0x20000000      0x5e8 load address 0x080101d4
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -2665,7 +2682,7 @@ END GROUP
                 0x200005e8                . = ALIGN (0x4)
                 0x200005e8                _edata = .
 
-.bss            0x200005e8     0x152c load address 0x0800ff14
+.bss            0x200005e8     0x1594 load address 0x080107bc
                 0x200005e8                . = ALIGN (0x4)
                 0x200005e8                _sbss = .
  *(.bss)
@@ -2718,66 +2735,68 @@ END GROUP
                 0x20000ab0                int_handler
  .bss           0x20000af4       0x2c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
                 0x20000af4                ucLastSwData
- .bss           0x20000b20      0x420 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
-                0x20000b20                eventRay
-                0x20000f20                eventRayIdx
-                0x20000f22                unkownIntError
-                0x20000f24                dmaindex
- .bss           0x20000f40       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
- .bss           0x20000f54      0x130 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
-                0x20000ff0                udpFrameIn
-                0x20001014                buttonData
-                0x20001018                latchButtonData
- *fill*         0x20001084        0x4 00
- .bss           0x20001088      0x548 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
-                0x20001088                userI2C
-                0x200010d8                lPresetCounterI2C
-                0x20001100                updateI2C
-                0x20001101                initI2C
-                0x20001102                isInitI2C
-                0x20001104                i2cBlock
-                0x20001310                devTable
-                0x20001342                activeDeviceIndex
-                0x20001343                totalDevicesActive
-                0x20001348                imeInfo
-                0x200015c8                currentIme
- .bss           0x200015d0        0x1 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioPlayer.o)
-                0x200015d0                audioMuteMode
- *fill*         0x200015d1        0x3 00
- .bss           0x200015d4       0x9c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
-                0x20001664                RearToneNode
-                0x20001668                FrontToneNode
-                0x2000166c                IntrtrToneNode
- .bss           0x20001670      0x468 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
-                0x20001688                wavDataLength
-                0x2000168c                wavStartAddress
-                0x20001690                wavCurrAddress
-                0x20001694                ucWavPlaying
-                0x20001695                ucWavRepeat
-                0x20001698                wavCounter
-                0x2000169c                szWavBuffer
-                0x2000189c                szWavBuffer2
- .bss           0x20001ad8       0x34 c:/program files (x86)/intelitek/easyc v6/cortex/tools/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x20001ad8                __malloc_top_pad
-                0x20001adc                __malloc_current_mallinfo
-                0x20001b04                __malloc_max_sbrked_mem
-                0x20001b08                __malloc_max_total_mem
- .bss           0x20001b0c        0x4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(sbrk.o)
+ .bss           0x20000b20       0x68 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+                0x20000b20                enc_data
+ .bss           0x20000b88      0x420 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x20000b88                eventRay
+                0x20000f88                eventRayIdx
+                0x20000f8a                unkownIntError
+                0x20000f8c                dmaindex
+ .bss           0x20000fa8       0x14 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
+ .bss           0x20000fbc      0x130 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
+                0x20001058                udpFrameIn
+                0x2000107c                buttonData
+                0x20001080                latchButtonData
+ *fill*         0x200010ec        0x4 00
+ .bss           0x200010f0      0x548 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x200010f0                userI2C
+                0x20001140                lPresetCounterI2C
+                0x20001168                updateI2C
+                0x20001169                initI2C
+                0x2000116a                isInitI2C
+                0x2000116c                i2cBlock
+                0x20001378                devTable
+                0x200013aa                activeDeviceIndex
+                0x200013ab                totalDevicesActive
+                0x200013b0                imeInfo
+                0x20001630                currentIme
+ .bss           0x20001638        0x1 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioPlayer.o)
+                0x20001638                audioMuteMode
+ *fill*         0x20001639        0x3 00
+ .bss           0x2000163c       0x9c C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x200016cc                RearToneNode
+                0x200016d0                FrontToneNode
+                0x200016d4                IntrtrToneNode
+ .bss           0x200016d8      0x468 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
+                0x200016f0                wavDataLength
+                0x200016f4                wavStartAddress
+                0x200016f8                wavCurrAddress
+                0x200016fc                ucWavPlaying
+                0x200016fd                ucWavRepeat
+                0x20001700                wavCounter
+                0x20001704                szWavBuffer
+                0x20001904                szWavBuffer2
+ .bss           0x20001b40       0x34 c:/program files (x86)/intelitek/easyc v6/cortex/tools/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20001b40                __malloc_top_pad
+                0x20001b44                __malloc_current_mallinfo
+                0x20001b6c                __malloc_max_sbrked_mem
+                0x20001b70                __malloc_max_total_mem
+ .bss           0x20001b74        0x4 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(sbrk.o)
  *(COMMON)
- COMMON         0x20001b10        0x4 c:/program files (x86)/intelitek/easyc v6/cortex/tools/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
-                0x20001b10                errno
-                0x20001b14                . = ALIGN (0x4)
-                0x20001b14                _ebss = .
-                0x20001b14                PROVIDE (end, _ebss)
-                0x20001b14                PROVIDE (_end, _ebss)
+ COMMON         0x20001b78        0x4 c:/program files (x86)/intelitek/easyc v6/cortex/tools/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                0x20001b78                errno
+                0x20001b7c                . = ALIGN (0x4)
+                0x20001b7c                _ebss = .
+                0x20001b7c                PROVIDE (end, _ebss)
+                0x20001b7c                PROVIDE (_end, _ebss)
 
-._usrstack      0x20001b14      0x100 load address 0x08011440
-                0x20001b14                . = ALIGN (0x4)
-                0x20001b14                _susrstack = .
-                0x20001c14                . = (. + _Minimum_Stack_Size)
- *fill*         0x20001b14      0x100 00
-                0x20001c14                . = ALIGN (0x4)
-                0x20001c14                _eusrstack = .
+._usrstack      0x20001b7c      0x100 load address 0x08011d50
+                0x20001b7c                . = ALIGN (0x4)
+                0x20001b7c                _susrstack = .
+                0x20001c7c                . = (. + _Minimum_Stack_Size)
+ *fill*         0x20001b7c      0x100 00
+                0x20001c7c                . = ALIGN (0x4)
+                0x20001c7c                _eusrstack = .
 
 .b1text
  *(.b1text)
@@ -2803,8 +2822,8 @@ END GROUP
  *(.eb3text)
  *(.eb3rodata)
  *(.eb3rodata*)
-                0x20001c14                __exidx_start = .
-                0x20001c14                __exidx_end = .
+                0x20001c7c                __exidx_start = .
+                0x20001c7c                __exidx_end = .
 
 /DISCARD/
  libc.a(*)
@@ -2842,89 +2861,91 @@ END GROUP
  .ARM.attributes
                 0x000000c4       0x31 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
  .ARM.attributes
-                0x000000f5       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
+                0x000000f5       0x31 C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o
  .ARM.attributes
-                0x00000126       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
+                0x00000126       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
  .ARM.attributes
-                0x00000157       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
+                0x00000157       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
  .ARM.attributes
-                0x00000188       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
+                0x00000188       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
  .ARM.attributes
-                0x000001b9       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
+                0x000001b9       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Comm.o)
  .ARM.attributes
-                0x000001ea       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
+                0x000001ea       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Config.o)
  .ARM.attributes
-                0x0000021b       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
+                0x0000021b       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(InputOutput.o)
  .ARM.attributes
-                0x0000024c       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
+                0x0000024c       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Interrupts.o)
  .ARM.attributes
-                0x0000027d       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(OI.o)
+                0x0000027d       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Motors.o)
  .ARM.attributes
-                0x000002ae       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Print.o)
+                0x000002ae       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(OI.o)
  .ARM.attributes
-                0x000002df       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
+                0x000002df       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Print.o)
  .ARM.attributes
-                0x00000310       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
+                0x00000310       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(QuadEncoders.o)
  .ARM.attributes
-                0x00000341       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
+                0x00000341       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_it.o)
  .ARM.attributes
-                0x00000372       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
+                0x00000372       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(ddt_support.o)
  .ARM.attributes
-                0x000003a3       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
+                0x000003a3       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(SerialPorts.o)
  .ARM.attributes
-                0x000003d4       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioPlayer.o)
+                0x000003d4       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(I2C.o)
  .ARM.attributes
-                0x00000405       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
+                0x00000405       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioPlayer.o)
  .ARM.attributes
-                0x00000436       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
+                0x00000436       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioRtttlPlayer.o)
  .ARM.attributes
-                0x00000467       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
+                0x00000467       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(AudioWavePlayer.o)
  .ARM.attributes
-                0x00000498       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
+                0x00000498       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_adc.o)
  .ARM.attributes
-                0x000004c9       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_exti.o)
+                0x000004c9       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dma.o)
  .ARM.attributes
-                0x000004fa       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
+                0x000004fa       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_exti.o)
  .ARM.attributes
-                0x0000052b       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
+                0x0000052b       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_flash.o)
  .ARM.attributes
-                0x0000055c       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
+                0x0000055c       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_gpio.o)
  .ARM.attributes
-                0x0000058d       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
+                0x0000058d       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_i2c.o)
  .ARM.attributes
-                0x000005be       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
+                0x000005be       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_nvic.o)
  .ARM.attributes
-                0x000005ef       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
+                0x000005ef       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_rcc.o)
  .ARM.attributes
-                0x00000620       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_systick.o)
+                0x00000620       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_spi.o)
  .ARM.attributes
-                0x00000651       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
+                0x00000651       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_systick.o)
  .ARM.attributes
-                0x00000682       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
+                0x00000682       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_tim.o)
  .ARM.attributes
-                0x000006b3       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dac.o)
+                0x000006b3       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_usart.o)
  .ARM.attributes
-                0x000006e4       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\STM32x_io_putchar_thumb.a(STM32F10X_io_putchar.o)
+                0x000006e4       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(stm32f10x_dac.o)
  .ARM.attributes
-                0x00000715       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(write.o)
+                0x00000715       0x31 C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\STM32x_io_putchar_thumb.a(STM32F10X_io_putchar.o)
  .ARM.attributes
-                0x00000743       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_printf.o)
+                0x00000746       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(write.o)
  .ARM.attributes
-                0x00000771       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
+                0x00000774       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_printf.o)
  .ARM.attributes
-                0x0000079f       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_puts.o)
+                0x000007a2       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_vfprintf.o)
  .ARM.attributes
-                0x000007cd       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_sprintf.o)
+                0x000007d0       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_puts.o)
  .ARM.attributes
-                0x000007fb       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
+                0x000007fe       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(_sp_sprintf.o)
  .ARM.attributes
-                0x00000829       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_wcsrtombs.o)
+                0x0000082c       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_dtoa.o)
  .ARM.attributes
-                0x00000857       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_wcrtomb.o)
+                0x0000085a       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_wcsrtombs.o)
  .ARM.attributes
-                0x00000885       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+                0x00000888       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_wcrtomb.o)
  .ARM.attributes
-                0x000008b3       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(sbrk.o)
+                0x000008b6       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\e_stdio_thumb.a(small_mprec.o)
+ .ARM.attributes
+                0x000008e4       0x2e C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Link\std_sbrk_thumb.lib(sbrk.o)
 
 .comment        0x00000000      0x1f9
  *(.comment)
@@ -2934,6 +2955,7 @@ END GROUP
  .comment       0x00000000       0x2b C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainIO.o
  .comment       0x00000000       0x2b C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Globals.o
  .comment       0x00000000       0x2b C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\MainCpp.o
+ .comment       0x00000000       0x2b C:\Users\micro\AppData\Roaming\Intelitek\easyC V6\Cortex\Temp\Encoder.o
  .comment       0x00000000       0x2b C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\Startup\StartupInit.o
  .comment       0x00000000       0x2b C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(easyCRuntime.o)
  .comment       0x00000000       0x2b C:\Program Files (x86)\Intelitek\easyC V6\Cortex\Tools\STM32F103VD\easyCRuntime\easyCRuntimeLib.lib(Clock.o)
