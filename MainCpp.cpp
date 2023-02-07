@@ -24,6 +24,6 @@ void Deadband() {
 
 void MainCpp() {
     PrintToScreen("Start\n");
-    Main();
+    Motor m1(1, 1, 2);
 }
 

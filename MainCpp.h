@@ -3,6 +3,7 @@
 
 #include "API.H"
 #include "Encoder.h"
+#include "Motor.h"
 
 #include <iostream>
 #include <fstream>
